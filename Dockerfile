@@ -13,6 +13,7 @@ LABEL maintainer="dante <0x5826@gmail.com>"
 
 COPY --from=builder /usr/sbin/smartdns /usr/sbin/smartdns
 
+RUN apk add tzdata
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime 
 RUN apk del tzdata
 
