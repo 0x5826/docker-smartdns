@@ -4,7 +4,7 @@ RUN apt update && \
     apt install -y git make gcc libssl-dev && \
     git clone https://github.com/pymumu/smartdns.git --depth 1 && \
     cd smartdns && \
-    sh build-pkg.sh --platform linux --arch x86-64 --static && \
+    sh package/build-pkg.sh --platform linux --arch x86-64 --static && \
     mv src/smartdns /usr/sbin
 
 FROM alpine:latest
