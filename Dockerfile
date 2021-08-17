@@ -2,7 +2,7 @@ FROM debian:buster-slim AS builder
 
 RUN apt update && \
     apt install -y git make gcc libssl-dev && \
-    git clone https://github.com/pymumu/smartdns.git --depth 1 && \
+    git clone -b Release34 https://github.com/pymumu/smartdns.git --depth 1 && \
     cd smartdns && \
     sh package/build-pkg.sh --platform linux --arch x86-64 --static && \
     mv src/smartdns /usr/sbin
