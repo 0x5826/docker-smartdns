@@ -6,7 +6,8 @@ Avoiding DNS pollution and improving network access speed, supports high-perform
 Unlike dnsmasq's all-servers, smartdns returns the fastest access resolution. （[read more](#faq)）
 
 ### Supported tags and respective Dockerfile links
-- `lastest` , `Release34` [Dockerfile](https://github.com/0x5826/docker-smartdns/blob/main/Dockerfile)
+- `lastest`  [Dockerfile](https://github.com/0x5826/docker-smartdns/blob/main/Dockerfile)
+- `Release34` [Dockerfile](https://github.com/0x5826/docker-smartdns/blob/Release34/Dockerfile)
 
 ### HOW TO USE
 1. Download smartdns.conf from [default smartdns config](https://raw.githubusercontent.com/pymumu/smartdns/master/etc/smartdns/smartdns.conf).
